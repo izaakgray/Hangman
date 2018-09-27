@@ -1,3 +1,9 @@
+import json
+import random
+
+wordList = json.load(open('wordlist.json'))
+word = random.choice(wordList)
+
 print('A word has been selected, please guess a letter!')
 
 guessedLetter = str(input())
